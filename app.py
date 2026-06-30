@@ -20,8 +20,8 @@ if option == "Doubt Pucho":
    query = st.text_input("Ex: Explain OS Paging in Hindi")
    if st.button("Ask AI") and query:
         with st.spinner("Socho mtt.."):
-             promt = f"You are a GATE CSE expert. Explain In simple Hindi + English mix: {query}"
-             response = model.generate_content(promt)
+             prompt = f"You are a GATE CSE expert. Explain In simple Hindi + English mix: {query}"
+             response = model.generate_content(prompt)
              st.success(response.text)
 
 elif option == "MCQ Generator":
