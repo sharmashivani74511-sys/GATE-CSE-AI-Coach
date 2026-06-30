@@ -36,7 +36,7 @@ elif option == "PDF Notes":
      st.subheader("Upload PDF Notes")
      uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
      if uploaded_file and st.button("Summarize"):
-         with st.spinner("Notes Ban Rhe H..")
+         with st.spinner("Notes Ban Rhe H.."):
               pdf_reader = PyPDF2.PdfReader(uploaded_file)
               text = "".join(page.extract_text() for page in pdf_reader.pages)
               prompt = f"Summarize this GATE CSE notes in 5 bullet points in Hindi: {text[:4000]}"
