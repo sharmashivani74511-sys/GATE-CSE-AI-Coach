@@ -12,7 +12,7 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Sidebar
 st.sidebar.header(" Tools")
-option = st.sidebar.selectbox("Choose Tool", ["Doubt Pucho", MCQ Generator", "PDF Notes"])
+option = st.sidebar.selectbox("Choose Tool", ["Doubt Pucho", "MCQ Generator", "PDF Notes"])
 
 if option == "Doubt Pucho":
    st.subheader("Ask Any GATE CSE Doubt")
